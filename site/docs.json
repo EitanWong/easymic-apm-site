@@ -1,0 +1,9 @@
+[
+  {"slug": "overview", "title": "认识 EasyMic APM", "description": "产品能力、场景与使用边界", "source": "docs/product/overview.md", "group": "开始使用"},
+  {"slug": "unity", "title": "Unity 快速接入", "description": "安装 Package、授权并启用处理", "source": "docs/product/unity.md", "group": "开始使用"},
+  {"slug": "licensing", "title": "授权与购买", "description": "单机版、专业版与独立 SDK 授权", "source": "docs/product/licensing.md", "group": "开始使用"},
+  {"slug": "native", "title": "原生库接入", "description": "支持平台、音频格式与调用顺序", "source": "docs/product/native.md", "group": "集成指南"},
+  {"slug": "audio-setup", "title": "设备与声音配置", "description": "播放参考、路由与效果排查", "source": "docs/product/audio-setup.md", "group": "集成指南"},
+  {"slug": "directional", "title": "实验性定向拾音", "description": "阵列输入、关注方向与实际限制", "source": "docs/product/directional.md", "group": "集成指南"},
+  {"slug": "releases", "title": "版本与更新", "description": "原生 SDK 与 Unity Package 的配套更新", "source": "docs/product/releases.md", "group": "产品更新"}
+]

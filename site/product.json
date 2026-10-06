@@ -1,0 +1,14 @@
+{
+  "name": "EasyMic APM",
+  "nativeVersion": "3.1",
+  "unityVersion": "0.1.1-exp.4",
+  "easymicVersion": "0.1.3-exp.6",
+  "unityMinimum": "2021.3 LTS",
+  "androidMinimum": "24",
+  "wechat": "EitanWong",
+  "purchaseUrl": "https://m.tb.cn/h.8Bl45y6?tk=spDRTK3xdVk",
+  "plans": {
+    "device": {"name": "单机版", "price": 268, "binding": "目标部署机器"},
+    "professional": {"name": "专业版", "price": 1698, "binding": "开发机"}
+  }
+}
