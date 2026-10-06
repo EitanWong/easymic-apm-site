@@ -43,6 +43,28 @@
     }
   }
   document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', () => copy(button.dataset.copy)));
+  const wechatModal = document.getElementById('wechat-modal');
+  const wechatOpeners = document.querySelectorAll('[data-wechat-open]');
+  const wechatClosers = document.querySelectorAll('[data-wechat-close]');
+  let lastWechatFocus = null;
+  const closeWechat = () => {
+    if (!wechatModal) return;
+    wechatModal.hidden = true;
+    document.body.classList.remove('wechat-modal-open');
+    lastWechatFocus?.focus();
+  };
+  const openWechat = () => {
+    if (!wechatModal) return;
+    lastWechatFocus = document.activeElement;
+    wechatModal.hidden = false;
+    document.body.classList.add('wechat-modal-open');
+    wechatModal.querySelector('.wechat-modal-close')?.focus();
+  };
+  wechatOpeners.forEach(button => button.addEventListener('click', openWechat));
+  wechatClosers.forEach(button => button.addEventListener('click', closeWechat));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && wechatModal && !wechatModal.hidden) closeWechat();
+  });
   document.querySelectorAll('.article-body pre').forEach(pre => {
     const code = pre.querySelector('code'); if (!code) return;
     const button = document.createElement('button'); button.className = 'copy-code'; button.textContent = '复制';

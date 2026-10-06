@@ -6,7 +6,11 @@
   "unityMinimum": "2021.3 LTS",
   "androidMinimum": "24",
   "wechat": "EitanWong",
+  "wechatDeepLink": "weixin://dl/add?username=EitanWong",
+  "wechatQr": "assets/images/wechat-qr.jpg",
   "purchaseUrl": "https://m.tb.cn/h.8Bl45y6?tk=spDRTK3xdVk",
+  "demoVideoUrl": "https://www.bilibili.com/video/BV18hE46rEzw/?spm_id_from=333.1387.homepage.video_card.click&vd_source=0d66247ecf62eeb792b0aeedfbdb5077",
+  "demoVideoEmbedUrl": "https://player.bilibili.com/player.html?bvid=BV18hE46rEzw&page=1&autoplay=0&high_quality=1&danmaku=0",
   "plans": {
     "device": {"name": "单机版", "price": 268, "binding": "目标部署机器"},
     "professional": {"name": "专业版", "price": 1698, "binding": "开发机"}

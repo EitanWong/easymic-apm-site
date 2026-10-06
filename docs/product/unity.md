@@ -8,7 +8,7 @@
 | --- | --- |
 | Unity | {{unityMinimum}} 或更高 |
 | APM Package | {{unityVersion}} |
-| EasyMic | {{easymicVersion}} |
+| EasyMic 基础 Package | {{easymicVersion}} |
 | 授权 | 有效的 EasyMic APM 授权及所需能力权限 |
 | Android | Minimum API Level {{androidMinimum}} 或更高 |
 | 设备 | 正确配置麦克风权限与音频输入输出 |
@@ -17,19 +17,23 @@
 
 ## 1. 安装 Package
 
-先在 Unity Package Manager 中安装 EasyMic：
+`com.eitan.easymic.apm` 不是独立采集包，必须先安装 EasyMic 基础 Package。两个 Package 都安装完成后，APM 才能接入 `EasyMicrophone` 的采集流程。
+
+第一步，在 Unity Package Manager 中安装 EasyMic 基础 Package：
 
 ```text
 https://github.com/EitanWong/com.eitan.easymic.git#upm
 ```
 
-购买授权后，通过作者提供的私有仓库访问或本地 Package 安装 APM 扩展：
+确认基础 Package 可以正常导入并识别麦克风后，再安装 APM 扩展。购买授权后，通过作者提供的私有仓库访问或本地 Package 安装：
 
 ```text
 https://github.com/EitanWong/com.eitan.easymic.apm.git#upm
 ```
 
 APM 仓库的访问权限与交付方式由作者提供。导入 Package Manager 中的 **Audio Processing Example**，用于确认安装和授权状态。
+
+安装顺序固定为：`com.eitan.easymic` → `com.eitan.easymic.apm`。请让两个 Package 使用兼容版本；基础 Package 的公开仓库与更新记录见 [EasyMic 基础 Package](https://github.com/EitanWong/com.eitan.easymic)。
 
 ## 2. 完成授权
 

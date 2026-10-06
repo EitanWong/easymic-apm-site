@@ -23,7 +23,7 @@ EasyMic APM 是声音的**前端声学处理层**。麦克风采集的声音经�
 
 原生库提供统一 C 接口，适合接入原生应用、.NET 或其他 FFI 宿主的音频链路。详见[原生库接入](native.md)。
 
-Unity Package 为 `com.eitan.easymic.apm`，在 EasyMic 采集工作流中加入原生处理。详见[Unity 快速接入](unity.md)。
+Unity Package 为 `com.eitan.easymic.apm`，依赖先安装的 `com.eitan.easymic` 基础采集包，再把 APM 处理接入 EasyMic 工作流。详见[Unity 快速接入](unity.md)。
 
 ## 使用条件
 
