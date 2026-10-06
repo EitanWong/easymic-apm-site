@@ -27,11 +27,11 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory _site
 
 ## GitHub Pages 部署
 
-在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。提交本目录、`docs/product/`、构建脚本与工作流到 `main` 后，工作流会构建并部署。
+这个公开仓库就是 EasyMic APM 产品站点的维护入口。推送 `main` 后，GitHub Actions 会构建并部署到：
 
-默认项目 URL：`https://EitanWong.github.io/easymic-audio-processing/`。全部站内资产与文档采用相对路径，主页与深层文档可直接刷新。404 页使用构建命令提供的项目基路径。
+`https://EitanWong.github.io/easymic-apm-site/`
 
-私有仓库使用 Pages 需要相应 GitHub 账户方案。发布站点不要求把原生代码仓库改为公开；页面由独立的静态产物部署。
+原生算法代码继续保留在私有仓库；这里仅包含产品页、公开文档、封面图与静态构建脚本。全部站内资产与文档采用相对路径，主页与深层文档可直接刷新。
 
 ## 持续更新
 
